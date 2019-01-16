@@ -1,17 +1,17 @@
 
-table {
+.table1 {
   width: 800px;
   border-collapse: collapse;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-thead tr, tbody tr
+.thead .tr, .tbody .tr
 {
   border-bottom: 1px solid #f3f3f3;
 }
 th,
-td {
+.td {
   padding: 15px;
   /*background-color: rgba(55, 159, 192, 0.86);*/
   color: black;
@@ -19,15 +19,15 @@ td {
 th {
   text-align: left;
 }
-thead th {
+.thead th {
   background-color:#4272d7;
   color:white;
 }
-tbody tr:hover {
+.tbody .tr:hover {
   background-color:#ececff;
   border-color: transparent !important;
 }
-tbody td {
+.tbody .td {
   position: relative;
 }
 /*tbody td:hover:before {

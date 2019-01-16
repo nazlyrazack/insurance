@@ -53,7 +53,7 @@
                                 <div class="input-group ">
                                     <label class="label required">Birthdate</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" id="birthdate">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" id="birthdate" >
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -82,9 +82,8 @@
                                         <div class="rs-select2 js-select-simple select--no-search">
                                         <select name="payer">
                                             <option disabled="disabled" selected="selected">Choose option</option>
-                                            <option>Payer 1</option>
-                                            <option>Payer 2</option>
-                                             <option>Payer 3</option>
+                                            <option>Mock Payer</option>
+                                            
                                          </select>
                                 <div class="select-dropdown"></div>
                             </div>
@@ -206,9 +205,9 @@
 
                 <div class="plan-deductible  container">
                     <h1 class="title">Plan Deductible</h1>
-                    <table class="table">
-                        <thead>
-                            <tr>
+                    <table class="table1">
+                        <thead class="thead">
+                            <tr class="tr">
                                 <th>Type</th>
                                 <th>Limit</hd>
                                 <th>Applied</th>
@@ -216,18 +215,18 @@
                             </tr>
 
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>in-network</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                        <tbody class="tbody">
+                            <tr class="tr">
+                                <td class="td">in-network</td>
+                                <td class="td">3000 USD</td>
+                                <td class="td">16.43 USD</td>
+                                <td class="td">2983.57 USD</td>
                             </tr>
                             <tr>
-                                <td>Out of network</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td class="td">Out of network</td>
+                                <td class="td">6000 USD</td>
+                                <td class="td">16.43 USD</td>
+                                <td class="td">5983.57 USD</td>
                             </tr>
                             
                         </tbody>
@@ -237,9 +236,9 @@
 
                 <div class="plan-out-of-pocket container">
                     <h1 class="title">Plan Out of pocket</h1>
-                    <table class="table">
-                        <thead>
-                            <tr>
+                    <table class="table1">
+                        <thead class="thead">
+                            <tr class="tr">
                                 <th>Type</th>
                                 <th>Limit</hd>
                                 <th>Applied</th>
@@ -247,18 +246,19 @@
                             </tr>
 
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>in-network</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                        <tbody class="tbody">
+                            <tr class="tr">
+                                <td class="td">in-network</td>
+                                <td class="td">3000 USD</td>
+                                <td class="td">16.43 USD</td>
+                                <td class="td">2983.57 USD</td>
 
                             </tr>
-                            <tr>
-                                <td>Out of network</td><td></td>
-                                <td></td>
-                                <td></td>
+                            <tr class="tr">
+                                <td class="td">Out of network</td>
+                                <td class="td">12500 USD</td>
+                                <td class="td">16.43 USD</td>
+                                <td class="td">12483.57 USD</td>
                             </tr>
                             
                         </tbody>
@@ -278,6 +278,7 @@
             </div>
         </div>
     </div>
+
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Vendor JS-->
