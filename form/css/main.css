@@ -214,6 +214,12 @@ h6 {
 
 .p-t-15 {
   padding-top: 15px;
+  
+}
+.btn
+{
+     margin:auto;
+  display:block;
 }
 
 .p-t-10 {
@@ -263,6 +269,7 @@ h6 {
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   cursor: pointer;
+  align-items: center;
   font-size: 18px;
   color: #fff;
   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
@@ -413,11 +420,23 @@ input {
 }
 
 .label {
-  font-size: 16px;
+  font-size: 17px;
   color: #555;
   text-transform: capitalize;
   display: block;
   margin-bottom: 5px;
+}
+
+.data
+{
+  font-size: 16px;
+  color:#155799;
+}
+
+
+.Coverage
+{
+  padding: 10px !important;
 }
 
 .radio-container {
@@ -514,7 +533,8 @@ input {
 .border
 {
   border-top: 4px solid black ;
-  width: 100%; 
+  width: 100%;
+  margin-top: 20px;
 
 }
 .title
@@ -669,3 +689,9 @@ input {
     color:red;
     margin:10 px;
   }
+
+
+.space
+{
+  padding-top: 20px;
+}

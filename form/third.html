@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Form</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="css/style.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h1 class="title">Patient Information</h1>
+                    <form method="POST">
+                        <div id="messages"></div>
+                        <div class="row row-space">
+                            <div class="col-3">
+                                <div class="input-group ">
+                                    <label class="label required">first name</label>
+                                    <input class="input--style-4" type="text" name="first_name" id="firstname">
+                                </div>
+                            </div>
+                        
+                            <div class="col-3">
+                                <div class="input-group ">
+                                    <label class="label required">Last name</label>
+                                    <input class="input--style-4" type="text" name="last_name" id="lastname">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="input-group ">
+                                    <label class="label required">Birthdate</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" id="birthdate">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row row-space">
+                           <div class="col-3">
+                                <div class="input-group ">
+                                    <label class="label required">Gender</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Male
+                                            <input type="radio" checked="checked" name="gender" id="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input type="radio" name="gender" id="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="input-group">
+                                    <label class="label">Payer</label>
+                                        <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="payer">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Payer 1</option>
+                                            <option>Payer 2</option>
+                                             <option>Payer 3</option>
+                                         </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="col-3">
+                                <div class="input-group">
+                                    <label class="label">Group number</label>
+                                    <input class="input--style-4" type="text" name="group_no">
+                                </div>
+                            </div>
+                        
+                        
+                         <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit" id="submit" name="submit">Submit</button>
+                        </div>
+                    </form>
+              
+                </div>
+
+                <div class="coverage-summary border">
+                    <h1 class="title">Coverage Summary</h1>
+                    <div class="Coverage">
+                    <div class="row row-space space">
+                        <div class="col-3">
+                            <label class="label">Name</label>
+                            <label class="data"> Brillo Babu</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">Gender</label>
+                            <label class="data">Male</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">birthdate</label>
+                            <label class="data">1981-08-25</label>
+
+                        </div>
+
+                    </div>
+                    <div class="row row-space space" >
+                        <div class="col-3">
+                            <label class="label">Address</label>
+                            <label class="data">123 MAIN ST SPARTANBURG SC 29307</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">Group Number</label>
+                            <label class="data">088818801000013</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">Coverage start date</label>
+                            <label class="data">2013-02-15</label>
+
+                        </div>
+
+                    </div>
+                    <div class="row row-space space">
+                        <div class="col-3">
+                            <label class="label">Insurance type</label>
+                            <label class="data">ppo</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">Is Insurance Active</label>
+                            <label class="data">True</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">PlanDescription</label>
+                            <label class="data">Open Choice</label>
+
+                        </div>
+
+                    </div>
+                    <div class="row row-space space">
+                        <div class="col-3">
+                            <label class="label">CoverageExpiry</label>
+                            <label class="data">2019</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">Date Of Service</label>
+                            <label class="data">2013-08-10</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">PlanNumber</label>
+                            <label class="data">0888188</label>
+
+                        </div>
+
+                    </div>
+                     <div class="row row-space space">
+                        <div class="col-3">
+                            <label class="label">Group Description</label>
+                            <label class="data">MOCK INDIVIDUAL ADVANTAGE PLAN</label>
+
+                        </div>
+                        <div class="col-3">
+                            <label class="label">Copay</label>
+                            <label class="data">20 USD</label>
+
+                        </div>
+                        <div class="col-3">
+                        </div>
+                        
+                    </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+                <div class="plan-deductible  container">
+                    <h1 class="title">Plan Deductible</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Limit</hd>
+                                <th>Applied</th>
+                                <th>Remaining</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>in-network</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Out of network</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="plan-out-of-pocket container">
+                    <h1 class="title">Plan Out of pocket</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Limit</hd>
+                                <th>Applied</th>
+                                <th>Remaining</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>in-network</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>Out of network</td><td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="js/validate.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
